@@ -30,4 +30,7 @@ const openai = new OpenAI({
 });
 ```
 
+## Give it a Star
+If you found this Implementation helpful or used it in your Projects, do give it a star. Thanks! 🌟
+
 [![Star History Chart](https://api.star-history.com/svg?repos=Herm-Studio/StakeVladDracula&type=Timeline)](https://star-history.com/#Herm-Studio/StakeVladDracula&Timeline)
