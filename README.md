@@ -1,16 +1,14 @@
 <p align="center">
-  <img width="160" src="./assets/logo.jpg" 
-    style="border-radius: 5%;"
-  />
+  <img width="160" src="./assets/logo.png" />
   <p align="center"> 
-    <h1 align="center">Stake Vlad Dracula</h1>
+    <h2 align="center">Stake Vlad Dracula</h2>
   </p>
   <p align="center">StakeVladDracula pierces all ! </p>
 </h2>
 
 ## Deploy
 
-Recommended deployment is with Vercel. 
+Recommended deployment is with Vercel. But you can deploy it anywhere you want.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Herm-Studio/StakeVladDracula)
 
