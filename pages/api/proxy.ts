@@ -37,7 +37,6 @@ export default async function handler(req: NextRequest) {
     return response;
   } catch (error) {
     console.error('Error fetching the proxied request:', error);
-    // 对于网络错误或请求无法完成的情况，返回500
     return new Response('Internal Server Error', { status: 500 });
   }
 }
