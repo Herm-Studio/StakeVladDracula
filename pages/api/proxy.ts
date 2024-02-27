@@ -8,10 +8,10 @@ export default async function handler(req: NextRequest) {
 
   const url = new URL(req.url);
 
-  if (url.pathname.startsWith('/v1')) {
-    url.host = 'api.openai.com';
-  } else if (url.pathname.startsWith('/v1beta')) {
+  if (url.pathname.startsWith('/v1beta')) {
     url.host = 'generativelanguage.googleapis.com';
+  } else {
+    url.host = 'api.openai.com';
   }
 
   url.protocol = 'https:';
