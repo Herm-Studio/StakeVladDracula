@@ -67,4 +67,4 @@ If you found this Implementation helpful or used it in your Projects, do give it
 
 
 > [!TIP]
->  You can use the [Fork Sync With Upstream]( https://github.com/aormsby/Fork-Sync-With-Upstream-action) action to keep your fork up to date with the upstream repository.
+>  You can use GitHub Action to keep the forked repository up to date with the original repository. For more information, see [Syncing a fork.](./docs/sync.md)
