@@ -12,7 +12,8 @@ Recommended deployment is with Vercel. But you can deploy it anywhere you want.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Herm-Studio/StakeVladDracula)
 
-This project is an experimental one. While it has been optimized, caution is still advised, and any consequences of use are at your own risk!
+> [!NOTE]
+> This project is an experimental one. While it has been optimized, caution is still advised, and any consequences of use are at your own risk!
 
 ## How to use
 Just deploy the project and you are ready to go.
@@ -35,3 +36,7 @@ const openai = new OpenAI({
 If you found this Implementation helpful or used it in your Projects, do give it a star. Thanks! 🌟
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Herm-Studio/StakeVladDracula&type=Timeline)](https://star-history.com/#Herm-Studio/StakeVladDracula&Timeline)
+
+
+> [!TIP]
+>  You can use the [Fork Sync With Upstream]( https://github.com/aormsby/Fork-Sync-With-Upstream-action) action to keep your fork up to date with the upstream repository.
