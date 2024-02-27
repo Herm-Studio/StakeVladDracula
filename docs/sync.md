@@ -6,9 +6,9 @@
 
 当你 fork 项目之后，由于 Github 的限制，需要手动去你 fork 后的项目的 Actions 页面启用 Workflows，并启用 Upstream Sync Action，启用之后即可开启每天时定时自动更新：
 
-1、点击进入 Action  Tab 
-2、点击绿色 “I understand my workflows, go ahead and enable them” 按钮，启用 Workflows
-3、点击 Upstream Sync Enable workflow 按钮，启用 Upstream Sync Action
+1. 点击进入 Action Tab  
+2. 点击绿色 “I understand my workflows, go ahead and enable them” 按钮，启用 Workflows  
+3. 点击 Upstream Sync Enable workflow 按钮，启用 Upstream Sync Action
 
 启用之后，你 fork 的项目会在每天的 00:00 自动更新代码。
 
