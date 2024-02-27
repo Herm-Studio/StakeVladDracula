@@ -36,22 +36,14 @@ export default async function handler(req: NextRequest) {
   console.log("url.toString()", url.toString());
 
   try {
-    const { method, bodyUsed, body, signal } = req;
-    const fetchBody = bodyUsed ? await req.text() : undefined;
-
-    console.log('req', {
-      method,
-      headers,
-      body: fetchBody,
-      signal,
-    });
-
+    const { method, body, signal } = req;
+    
     const response = await fetch(
       url.toString(),
       {
         method,
         headers,
-        body: fetchBody,
+        body,
         signal,
       }
     );
