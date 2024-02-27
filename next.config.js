@@ -8,6 +8,10 @@ const nextConfig = {
         "destination": "/api/proxy"
       },
       {
+        "source": "/v1beta/(.*)",
+        "destination": "/api/proxy"
+      },
+      {
         "source": "/",
         "destination": "/api/proxy"
       }
