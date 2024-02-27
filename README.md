@@ -12,6 +12,7 @@ Recommended deployment is with Vercel. But you can deploy it anywhere you want.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Herm-Studio/StakeVladDracula)
 
+This project is an experimental one. While it has been optimized, caution is still advised, and any consequences of use are at your own risk!
 
 ## How to use
 Just deploy the project and you are ready to go.
