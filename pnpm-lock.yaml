@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@netlify/plugin-nextjs':
+    specifier: 5.0.0-rc.2
+    version: 5.0.0-rc.2
   next:
     specifier: ^14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -118,6 +121,11 @@ packages:
       - encoding
       - supports-color
     dev: true
+
+  /@netlify/plugin-nextjs@5.0.0-rc.2:
+    resolution: {integrity: sha512-5yZl3xZ+YYJcdr49ZhUfZT7lVKjRld3vf7Z7/PZU9kdAPlEsHpfMa0AJEMIujpFs4nNWQnNtQbvb3RuyM1salw==}
+    engines: {node: '>=18.0.0'}
+    dev: false
 
   /@next/env@14.1.0:
     resolution: {integrity: sha512-Py8zIo+02ht82brwwhTg36iogzFqGLPXlRGKQw5s+qP/kMNc4MAyDeEwBKDijk6zTIbegEgu8Qy7C1LboslQAw==}
@@ -2042,6 +2050,7 @@ packages:
   /punycode@2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
 
   /qs@6.11.0:
