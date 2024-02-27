@@ -13,6 +13,8 @@ After you fork the project, due to Github's restrictions, you need to manually g
 After enabling, the project you fork will automatically update the code daily at 00:00 UTC.
 
 
+![Enable Automatic Updates](../docs/images/enable-actions-sync.jpg)
+
 ## Manually update code
 If you want to manually update immediately, you can check. [Documentation of Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) Learn how to synchronize the forked project with the upstream code.
 
