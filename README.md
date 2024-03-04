@@ -59,6 +59,21 @@ curl https://${BASE_URL}/models/gemini-pro:generateContent?key=${API_KEY} \
           "text": "Write a story about a magic backpack."}]}]}' 2> /dev/null
 ```
 
+### Groq  
+for **Groq** change `https://api.groq.com/openai/v1` to `YOUR_DEPLOYED_URL/openai/v1`
+
+
+```diff
+export API_KEY="YOUR_API_KEY"
+- export BASE_URL="https://api.groq.com/openai/v1"
++ export BASE_URL="YOUR_DEPLOYED_URL/openai/v1"
+
+curl https://${BASE_URL}/chat/completions \
+    -H "Authorization: Bearer $GROQ_API_KEY" \
+    -H 'Content-Type: application/json' \
+    -X POST \
+    -d '{"messages": [{"role": "user", "content": "Explain the importance of low latency LLMs"}], "model": "mixtral-8x7b-32768"}'
+```
 
 ## Give it a Star
 If you found this Implementation helpful or used it in your Projects, do give it a star. Thanks! 🌟
