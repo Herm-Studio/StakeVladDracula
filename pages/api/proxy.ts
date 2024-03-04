@@ -11,10 +11,12 @@ export default async function handler(req: NextRequest) {
     url.host = 'generativelanguage.googleapis.com';
   } else if (url.pathname.startsWith('/headers')) {
     url.host = 'httpbin.org';
+  } else if (url.pathname.startsWith('/openai/v1')) {
+    url.host = 'api.groq.com';
   } else {
     url.host = 'api.openai.com';
   }
-
+  
   url.protocol = 'https:';
   url.port = '';
 
