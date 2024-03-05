@@ -14,6 +14,12 @@ Recommended deployment is with Vercel. But you can deploy it anywhere you want.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Herm-Studio/StakeVladDracula)
 
+### Zeabur
+
+You can also deploy it with Zeabur.
+
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/3JCE7F?referralCode=WongLoki)
+
 ### Netlify
 
 You can also deploy it with Netlify.
