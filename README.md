@@ -81,6 +81,29 @@ curl https://${BASE_URL}/chat/completions \
     -d '{"messages": [{"role": "user", "content": "Explain the importance of low latency LLMs"}], "model": "mixtral-8x7b-32768"}'
 ```
 
+### Claude
+for **Claude** change `https://api.anthropic.com/v1` to `YOUR_DEPLOYED_URL/v1`
+
+
+```diff
+export API_KEY="YOUR_API_KEY"
+- export BASE_URL="https://api.anthropic.com/v1"
++ export BASE_URL="YOUR_DEPLOYED_URL/v1"
+
+curl https://${BASE_URL}/v1/message \
+     --header "x-api-key: $ANTHROPIC_API_KEY" \
+     --header "anthropic-version: 2023-06-01" \
+     --header "content-type: application/json" \
+     --data \
+      '{
+          "model": "claude-3-opus-20240229",
+          "max_tokens": 1024,
+          "messages": [
+              {"role": "user", "content": "Hello, world"}
+          ]
+      }'
+```
+
 ## Give it a Star
 If you found this Implementation helpful or used it in your Projects, do give it a star. Thanks! 🌟
 
