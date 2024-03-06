@@ -3,6 +3,15 @@ const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
     return [
+      // Claude Api path
+      {
+        source: "/v1/messages",
+        destination: "/api/proxy",
+      },
+      {
+        source: "/v1/complete",
+        destination: "/api/proxy",
+      },
       // OpenAI Api path
       {
         source: "/v1/(.*)",
@@ -18,16 +27,6 @@ const nextConfig = {
         source: "/openai/v1/(.*)",
         destination: "/api/proxy",
       },
-      // Claude Api path
-      {
-        source: "/v1/messages",
-        destination: "/api/proxy",
-      },
-      {
-        source: "/v1/complete",
-        destination: "/api/proxy",
-      },
-      // Claude Api path
       {
         source: "/headers",
         destination: "/api/proxy",
