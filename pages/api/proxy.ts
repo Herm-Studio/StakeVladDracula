@@ -13,6 +13,8 @@ export default async function handler(req: NextRequest) {
     url.host = 'httpbin.org';
   } else if (url.pathname.startsWith('/openai/v1')) {
     url.host = 'api.groq.com';
+  } else if (url.pathname.startsWith('/v1/messages') || url.pathname.startsWith('/v1/complete')) {
+    url.host = 'api.anthropic.com';
   } else {
     url.host = 'api.openai.com';
   }
