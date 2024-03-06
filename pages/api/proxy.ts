@@ -28,7 +28,7 @@ export default async function handler(req: NextRequest) {
   const keysToDelete: string[] = [];
   headers.forEach((_, key: string) => {
     console.log("key", key);
-    if (key.toLowerCase().startsWith('x-')) {
+    if (key.toLowerCase().startsWith('x-') && key.toLowerCase() !== 'x-api-key') {
       keysToDelete.push(key);
     }
   });
