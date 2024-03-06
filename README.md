@@ -90,7 +90,7 @@ export API_KEY="YOUR_API_KEY"
 - export BASE_URL="https://api.anthropic.com/v1"
 + export BASE_URL="YOUR_DEPLOYED_URL/v1"
 
-curl https://${BASE_URL}/v1/message \
+curl https://${BASE_URL}/v1/messages \
      --header "x-api-key: $ANTHROPIC_API_KEY" \
      --header "anthropic-version: 2023-06-01" \
      --header "content-type: application/json" \
