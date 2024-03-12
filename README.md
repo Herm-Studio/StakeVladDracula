@@ -6,6 +6,34 @@
   <p align="center">StakeVladDracula pierces all ! </p>
 </h2>
 
+
+
+## Docker Support
+
+This project includes support for Docker. Find the Docker image on [Docker Hub](https://hub.docker.com/repository/docker/hermstudio/stakevladdracula-nginx/general).
+
+To push a new tag to the Docker image, use the following command:
+
+```bash
+docker push hermstudio/stakevladdracula-nginx:<tagname>
+```
+
+### Running the Container
+After pulling the image, you can run the container using:
+```bash
+docker run -d -p 80:80 hermstudio/stakevladdracula-nginx:latest
+```
+This command will start the container and listen on port 80. Adjust the port settings and other configurations according to your needs.
+
+### Pushing a New Image Version
+If you have made changes and wish to push a new version of the image to Docker Hub, tag your local image accordingly and then push it using:
+```bash
+docker tag hermstudio/stakevladdracula-nginx:yourlocaltag hermstudio/stakevladdracula-nginx:tagname
+docker push hermstudio/stakevladdracula-nginx:tagname
+```
+
+
+
 ## Deploy
 
 ### Vercel
