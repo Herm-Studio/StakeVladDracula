@@ -21,7 +21,7 @@ docker push hermstudio/stakevladdracula-nginx:<tagname>
 ### Running the Container
 After pulling the image, you can run the container using:
 ```bash
-docker run -d -p 80:80 hermstudio/stakevladdracula-nginx:latest
+run -d -p 80:80 -e SERVER_NAME=youdomain.com hermstudio/stakevladdracula-nginx:latest
 ```
 This command will start the container and listen on port 80. Adjust the port settings and other configurations according to your needs.
 
