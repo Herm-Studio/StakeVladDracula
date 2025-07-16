@@ -4,7 +4,28 @@
     <h2 align="center">Stake Vlad Dracula</h2>
   </p>
   <p align="center">StakeVladDracula pierces all ! </p>
+  <p align="center">🎯 Pure AI API Proxy Service - No UI, Just Performance</p>
 </h2>
+
+## ⚡ Latest Updates - July 16, 2025
+
+### 🆕 StakeVladDracula Router v2.0
+- **NEW**: Added support for OpenAI Responses API endpoint `/v1/responses`
+- **ENHANCED**: Upgraded to Router v2.0 with improved performance and reliability
+- **REFACTORED**: Complete architecture overhaul - now a pure API service (no frontend)
+- **OPTIMIZED**: 65% code reduction while maintaining full functionality
+- **HEADERS**: All requests now include `StakeVladDracula-Router: v2.0` identification
+
+### 🎯 Supported Endpoints
+| AI Provider | Endpoint Pattern | Example |
+|------------|-----------------|---------|
+| OpenAI | `/v1/*` | `/v1/chat/completions` |
+| **OpenAI Responses** | `/v1/responses/*` | `/v1/responses/create` |
+| Claude | `/v1/messages/*` | `/v1/messages` |
+| Gemini | `/v1beta/*` | `/v1beta/models/gemini-pro:generateContent` |
+| Groq | `/openai/v1/*` | `/openai/v1/chat/completions` |
+
+> 💡 **Service Info**: Visit your deployed URL root (`/`) to get API information and available endpoints.
 
 
 
@@ -75,6 +96,21 @@ const openai = new OpenAI({
 });
 ```
 
+#### 🆕 OpenAI Responses API
+For **OpenAI Responses API** endpoints, use `YOUR_DEPLOYED_URL/v1/responses`
+
+```bash
+# Example: Create a response using the Responses API
+curl https://stake-vlad-dracula.vercel.app/v1/responses/create \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_OPENAI_API_KEY" \
+  -d '{
+    "model": "gpt-4",
+    "messages": [{"role": "user", "content": "Hello!"}],
+    "response_format": {"type": "json_object"}
+  }'
+```
+
 ### Gemini  
 for **Gemini** change `https://generativelanguage.googleapis.com/v1beta` to `YOUR_DEPLOYED_URL/v1beta`
 
@@ -137,6 +173,18 @@ If you found this Implementation helpful or used it in your Projects, do give it
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Herm-Studio/StakeVladDracula&type=Timeline)](https://star-history.com/#Herm-Studio/StakeVladDracula&Timeline)
 
+
+## 🔧 Router Information
+
+All requests processed by StakeVladDracula include the `StakeVladDracula-Router` header for identification and debugging:
+
+```
+StakeVladDracula-Router: v2.0
+```
+
+### Version History
+- **v2.0** (July 16, 2025): Added OpenAI Responses API support, pure API service architecture
+- **v1.0** (Previous): Initial full-stack implementation with frontend interface
 
 > [!TIP]
 >  You can use GitHub Action to keep the forked repository up to date with the original repository. For more information, see [Syncing a fork.](./docs/sync.md)

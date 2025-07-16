@@ -1,31 +1,28 @@
 {
-  "name": "openai",
-  "version": "1.1.0",
-  "description": "",
+  "name": "StakeVladDracula",
+  "version": "2.1.0",
+  "description": "Pure AI API Proxy Service - Router v2.0",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build", 
     "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type-check": "tsc --noEmit"
   },
   "author": "Loki",
   "license": "MIT",
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.11.20",
-    "@types/react": "^18.2.58",
-    "@types/uuid": "^9.0.8",
-    "express": "^4.18.2",
-    "http-proxy-middleware": "^2.0.6",
-    "uuid": "^9.0.1",
-    "vercel": "^33.5.2"
-  },
   "dependencies": {
     "@netlify/plugin-nextjs": "5.0.0-rc.2",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "@types/react": "^18.2.58",
+    "vercel": "^33.5.2"
   }
 }
