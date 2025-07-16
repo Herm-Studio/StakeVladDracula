@@ -3,38 +3,30 @@ const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
     return [
-      // Claude Api path
-      {
-        source: "/v1/messages",
-        destination: "/api/proxy",
-      },
-      {
-        source: "/v1/complete",
-        destination: "/api/proxy",
-      },
-      // OpenAI Api path
-      {
-        source: "/v1/(.*)",
-        destination: "/api/proxy",
-      },
-      // Gemini Api path
-      {
-        source: "/v1beta/(.*)",
-        destination: "/api/proxy",
-      },
-      // Groq Api path
-      {
-        source: "/openai/v1/(.*)",
-        destination: "/api/proxy",
-      },
       {
         source: "/headers",
-        destination: "/api/proxy",
+        destination: "/api/headers",
       },
       {
-        source: "/",
-        destination: "/api/proxy"
-      }
+        source: "/v1/messages/:path*",
+        destination: "/api/v1/messages/:path*",
+      },
+      {
+        source: "/v1/complete/:path*", 
+        destination: "/api/v1/complete/:path*",
+      },
+      {
+        source: "/v1beta/:path*",
+        destination: "/api/v1beta/:path*",
+      },
+      {
+        source: "/openai/v1/:path*",
+        destination: "/api/openai/v1/:path*",
+      },
+      {
+        source: "/v1/:path*",
+        destination: "/api/v1/:path*",
+      },
     ];
   },
 };
